@@ -31,4 +31,4 @@ branches:
     - hexo-source
 env:
  global:
-   - GH_REF: github.com/tianqiyu119/tianqiyu119.github.io.git --{仓库地址}
+   - GH_REF: github.com/tianqiyu119/tianqiyu119.github.io.git
