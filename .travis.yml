@@ -19,7 +19,7 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "qiyuTien"
+  - git config user.name "qiyu Tien"
   - git config user.email "tianqiyu119@126.com"
   - git add .
   - git commit -m "travis CI"
