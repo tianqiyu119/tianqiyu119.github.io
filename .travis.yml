@@ -1,6 +1,11 @@
 language: node_js
 node_js: stable
 
+cache:
+  apt: true
+    directories:
+        - node_modules # 缓存不经常更改的内容
+
 # S: Build Lifecycle
 install:
   - npm install
@@ -14,16 +19,16 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "qiyuTien" --{GitHub账户名称}
-  - git config user.email "tianqiyu119@126.com" --{Github账户邮箱}
+  - git config user.name "qiyuTien"
+  - git config user.email "tianqiyu119@126.com"
   - git add .
   - git commit -m "travis CI"
-  - git push --force --quiet "https://${hexo-source}@${GH_REF}" master:master
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 # E: Build LifeCycle
 
 branches:
   only:
-    - hexo-source --{Hexo源码分支名称}
+    - hexo-source
 env:
  global:
    - GH_REF: github.com/tianqiyu119/tianqiyu119.github.io.git --{仓库地址}
