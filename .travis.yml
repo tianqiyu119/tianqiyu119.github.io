@@ -1,0 +1,29 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "qiyuTien" --{GitHub账户名称}
+  - git config user.email "tianqiyu119@126.com" --{Github账户邮箱}
+  - git add .
+  - git commit -m "travis CI"
+  - git push --force --quiet "https://${hexo-source}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - hexo-source --{Hexo源码分支名称}
+env:
+ global:
+   - GH_REF: github.com/tianqiyu119/tianqiyu119.github.io.git --{仓库地址}
