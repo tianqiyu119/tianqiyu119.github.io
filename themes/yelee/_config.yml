@@ -43,7 +43,7 @@ subnav:
   Email: "mailto:tianqiyu119@126.com"
   #新浪微博: "sina weibo"
   V2EX: "https://www.v2ex.com/member/tqy"
-  RSS: "/atom.xml"
+  #RSS: "/atom.xml"
   #知乎: "zhihu"
   #豆瓣: "douban"
   #简书: "jianshu"
