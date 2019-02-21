@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: qiyu Tien's blog
-subtitle:
-description:
+title: Chiyu Tien's blog
+subtitle: 神可伐与? 
+description: 
 keywords:
-author: qiyu Tien
+author: Chiyu Tien
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.tianqiyu.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
